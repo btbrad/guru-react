@@ -12,7 +12,15 @@ function App() {
         >
           disabled按钮
         </Button>
-        <Button btnType={ButtonType.Primary}>按钮</Button>
+        <Button
+          btnType={ButtonType.Primary}
+          onClick={e => {
+            e.preventDefault()
+            alert('hello')
+          }}
+        >
+          按钮
+        </Button>
         <Button
           size={ButtonSize.Small}
           btnType={ButtonType.Danger}
